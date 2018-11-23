@@ -1,0 +1,266 @@
+.greeting-page {
+    background: url(../img/bg-head2.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.greeting-page>* {
+    color: #e8e8e8;
+    text-align: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    padding: 5px 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+h1 {
+    color: #29323c;
+    font-size: 26px;
+}
+
+h2 {
+    color: #29323c;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+p {
+    color: #29323c;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.greeting-page a {
+    width: 126px;
+    height: 40px;
+    border: 1px solid #f2f2f2;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    line-height: 2.5;
+    cursor: pointer;
+}
+
+.services {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.inner-wrap {
+    display: inline-block;
+    width: calc(100% / 4 - 20px);
+    vertical-align: top;
+}
+
+.inner-wrap__el {
+    width: 120px;
+    height: 120px;
+    background-image: radial-gradient(circle 60px at center, #485563 0%, #29323c 100%);
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.inner-wrap__el--different {
+    background: red;
+}
+
+.inner-wrap__el img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.works__head {
+    position: relative;
+    text-align: center;
+}
+
+.works__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0;
+}
+
+.works__photo {
+    flex: 1 1 20%;
+    text-align: center;
+}
+
+.works__photo img {
+    width: 100%;
+    height: auto;
+}
+
+.logos {
+    background: white;
+    padding: 50px 0 0;
+    text-align: center;
+}
+
+.logos__icon {
+    display: inline-block;
+    font-size: 50px;
+    padding: 0 100px;
+}
+
+.logos__link--tw {
+    color: #1da1f2;
+}
+
+.logos__link--fb {
+    color: #4267b2;
+}
+
+.logos__link--pt {
+    color: rgb(189, 8, 28);
+}
+
+.logos__link--yt {
+    color: #ff0000;
+}
+
+.logos__link--sc {
+    color: #f50;
+}
+
+.plans {
+    background: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.plans-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.plans-wrap__item {
+    border: 2px solid #485563;
+    margin: 0 5px;
+    width: 30%;
+    max-width: 400px;
+    min-width: 200px;
+    padding: 10px 10px 40px;
+    position: relative;
+}
+
+.plans-heading {
+    color: #485563;
+    font-size: 20px;
+}
+
+.price-wrap span {
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.price-wrap__currency,
+.price-wrap__cents {
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.price-wrap__main {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.price-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin: 30px auto;
+}
+
+.price-wrap__currwrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.description {
+    color: #29323c;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 40px;
+    /* padding: 20px; */
+}
+
+.plan-select {
+    background-color: #485563;
+    color: white;
+    padding: 8px 20px;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 30px;
+}
+
+.contact-us {
+    padding: 50px;
+    background: #485563;
+}
+
+.contact-us form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.contact-us label,
+.contact-us button {
+    display: block;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.footer__social {
+    display: flex;
+}
+
+.footer__text {
+    padding-right: 20px;
+}
+
+.footer__icon {
+    padding: 8px 10px;
+    font-size: 20px;
+}
+
+.footer__link {
+    color: #29323c;
+}
