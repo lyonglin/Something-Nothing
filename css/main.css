@@ -111,6 +111,77 @@ p {
     height: auto;
 }
 
+.team {
+    background: url(../img/forest.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    padding: 30px;
+}
+
+.headline {
+    text-align: center;
+    position: relative;
+}
+
+.headline__title {
+    color: #f2f2f2;
+}
+
+.headline__text {
+    color: #f2f2f2;
+}
+
+.team__content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile {
+    background-color: white;
+    margin: 10px;
+}
+
+.profile__name {
+    font-size: 15px;
+}
+
+.profile__about {
+    font-size: 14px;
+}
+
+.profile__social {
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile__icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #29323c;
+    border-radius: 50%;
+    background-color: #29323c;
+}
+
+.profile__icon i {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn--team {
+    margin: 30px 0;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+}
+
 .logos {
     background: white;
     padding: 50px 0 0;
@@ -227,19 +298,79 @@ p {
     border-radius: 30px;
 }
 
+.contact {
+    display: flex;
+    align-items: stretch;
+}
+
 .contact-us {
+    background: url(../img/contact2.jpg) no-repeat;
     padding: 50px;
-    background: #485563;
+    background-size: contain;
+    color: #f6f6f6;
 }
 
 .contact-us form {
     max-width: 300px;
     margin: 0 auto;
+    width: 60%;
 }
 
 .contact-us label,
-.contact-us button {
+    {
     display: block;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay .inner-wrap {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    background: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* .popup{
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+} */
+
+.inner-wrap .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: all 300ms;
+    font-size: 30px;
+    width: 20px;
+    text-decoration: none;
+    color: black;
 }
 
 .footer {
